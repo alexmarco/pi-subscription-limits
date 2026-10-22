@@ -5,8 +5,6 @@
 
 ### Bug Fixes
 
-* use English subscription panel title ([82e32f6](https://github.com/alexmarco/pi-subscription-limits/commit/82e32f6bcc9455a379f9a36fa61686349215fce4))
-* use English subscription panel title ([273ca67](https://github.com/alexmarco/pi-subscription-limits/commit/273ca672dfa1e6de63e97c4143a1cf8181b6c4c9))
 * use English subscription panel title ([9259c7f](https://github.com/alexmarco/pi-subscription-limits/commit/9259c7f657eed103ba566b36c0d61b10c1a19c59))
 
 ## 1.0.0 (2026-10-22)
