@@ -17,7 +17,7 @@ The project follows Gitflow. `main` contains released versions; `develop` is the
 - Promote `develop` to `main` through a pull request titled `chore: promote develop to main`. Merge this pull request with **Create a merge commit** so the individual Conventional Commits remain visible to Release Please. Do not use a `feat:` or `fix:` promotion title; it would add a duplicate release-note entry.
 - Merge Release Please's generated release pull request into `main` with **Create a merge commit**. Afterward, sync `main` back into `develop` through a pull request titled `chore: sync main back into develop`, using **Squash and merge**.
 
-GitHub enforces linear history on `develop`, and rebase merging is disabled for the repository. Together, these settings leave squash merging as the only available strategy for pull requests into `develop`; `main` still permits merge commits for promotions and releases.
+GitHub enforces linear history on `develop`, and rebase merging is disabled for the repository. Together, these settings leave squash merging as the only available strategy for pull requests into `develop`; `main` still permits merge commits for promotions and releases. Both branches require pull requests and passing CI checks. The `main` up-to-date requirement is disabled so GitFlow back-syncs can keep `develop` linear; CI validates each pull request against its proposed merge result.
 
 Keep pull requests focused, describe the user-visible behavior, and add or update tests when behavior changes. All CI checks must pass before a pull request can be merged. Do not commit credentials, access tokens, or personal usage data.
 
