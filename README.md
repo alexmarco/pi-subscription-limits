@@ -18,6 +18,16 @@ pi install ./pi-subscription-limits
 
 Restart Pi, open `/atelier`, and enable the **Subscription** panel in **Settings → Display**. Contributed panels start hidden in Pi Atelier.
 
+## Screenshots
+
+The Subscription panel displays Codex and Claude usage windows and their local reset countdowns:
+
+![Subscription panel showing Codex and Claude usage windows](docs/images/subscription-panel.png)
+
+Enable the panel from the sidebar editor in **Settings → Display**:
+
+![Display settings with the Subscription sidebar item enabled](docs/images/display-settings.png)
+
 ## Data sources
 
 The extension requests usage data when the TUI session starts. Codex refreshes every minute; Claude refreshes every 30 minutes to reduce usage-endpoint throttling. Countdown displays update every minute. HTTP 429 responses defer subsequent requests until at least the normal refresh interval, five minutes, and any server-provided `Retry-After` have elapsed. Last-known values remain visible and are marked as previous data when a refresh fails.
