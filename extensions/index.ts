@@ -538,7 +538,7 @@ function buildPanel(snapshot: UsageSnapshot): {
   ];
   return {
     id: PANEL_ID,
-    title: "Suscripción",
+    title: "Subscription",
     role: "context",
     rows: keyValues.map(({ label, value }) => `${label} ${value}`.trim()),
     keyValues,
