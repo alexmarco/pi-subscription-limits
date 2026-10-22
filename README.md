@@ -16,7 +16,7 @@ For local development, install it from its directory:
 pi install ./pi-subscription-limits
 ```
 
-Restart Pi, open `/atelier`, and enable the **Suscripción** panel in **Settings → Display**. Contributed panels start hidden in Pi Atelier.
+Restart Pi, open `/atelier`, and enable the **Subscription** panel in **Settings → Display**. Contributed panels start hidden in Pi Atelier.
 
 ## Data sources
 
