@@ -4,7 +4,13 @@ A Pi extension that adds Codex and Claude subscription windows to the Pi Atelier
 
 ## Install
 
-Install this package from its directory:
+Install the published package:
+
+```bash
+pi install npm:pi-subscription-limits
+```
+
+For local development, install it from its directory:
 
 ```bash
 pi install ./pi-subscription-limits
