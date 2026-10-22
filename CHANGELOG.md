@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/alexmarco/pi-subscription-limits/compare/v1.0.1...v1.0.2) (2026-10-22)
+
+
+### Miscellaneous Chores
+
+* release 1.0.2 ([#44](https://github.com/alexmarco/pi-subscription-limits/issues/44)) ([e2e0108](https://github.com/alexmarco/pi-subscription-limits/commit/e2e010899e33490e97d87673ef6a11c796e5615d))
+
 ## [1.0.1](https://github.com/alexmarco/pi-subscription-limits/compare/v1.0.0...v1.0.1) (2026-10-22)
 
 
