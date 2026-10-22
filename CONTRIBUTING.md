@@ -24,4 +24,4 @@ Use Conventional Commits:
 - `feat!:` or a `BREAKING CHANGE:` footer for a major release.
 - `docs:`, `test:`, `chore:`, and other standard types for changes that do not independently trigger a release.
 
-Release Please reads commits on `main`, updates `CHANGELOG.md` and `package.json`, and opens a release pull request. Merging that pull request creates the GitHub release and version tag. Release Please does not publish an npm package; install the extension through Pi using the GitHub repository URL.
+Release Please reads commits on `main`, updates `CHANGELOG.md` and `package.json`, and opens a release pull request. Merging that pull request creates the GitHub release and version tag. When a GitHub release is published, the publish workflow publishes the package to npm. Configure the repository secret `NPM_TOKEN` with an npm publishing token before the first release. The `pi-package` keyword makes it eligible for discovery in the Pi package catalog.
