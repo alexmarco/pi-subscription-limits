@@ -3,6 +3,20 @@
   "version": "0.1.0",
   "description": "Pi Atelier sidebar panel for Codex and Claude subscription limits",
   "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-atelier",
+    "subscription-limits"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmarco/pi-subscription-limits.git"
+  },
+  "homepage": "https://github.com/alexmarco/pi-subscription-limits#readme",
+  "bugs": {
+    "url": "https://github.com/alexmarco/pi-subscription-limits/issues"
+  },
   "pi": {
     "extensions": [
       "./extensions/index.ts"
