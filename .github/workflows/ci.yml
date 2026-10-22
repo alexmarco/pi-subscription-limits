@@ -17,12 +17,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Require a non-release promotion title
-        if: github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'develop'
+        if: >-
+          github.event.pull_request.base.ref == 'main' &&
+          !startsWith(github.event.pull_request.head.ref, 'release-please--') &&
+          !startsWith(github.event.pull_request.head.ref, 'hotfix/')
         env:
           PR_TITLE: ${{ github.event.pull_request.title }}
         run: |
           if [[ "$PR_TITLE" != chore:* ]]; then
-            echo "::error::Promotion pull requests from develop to main must use a chore: title."
+            echo "::error::Pull requests into main must use a chore: title, except Release Please and hotfix pull requests."
             exit 1
           fi
 
