@@ -1,6 +1,6 @@
 {
   "name": "pi-subscription-limits",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Pi Atelier sidebar panel for Codex and Claude subscription limits",
   "type": "module",
   "keywords": [
