@@ -25,7 +25,7 @@ jobs:
           PR_TITLE: ${{ github.event.pull_request.title }}
         run: |
           if [[ "$PR_TITLE" != chore:* ]]; then
-            echo "::error::Promotion pull requests from develop to main must use a chore: title."
+            echo "::error::Pull requests into main must use a chore: title, except Release Please and hotfix pull requests."
             exit 1
           fi
 
